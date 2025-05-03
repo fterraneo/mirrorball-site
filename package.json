@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "deploy": "surge dist mirrorball.surge.sh"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
     "astro": "^5.7.10"
   },
   "devDependencies": {
-    "prettier": "3.5.3"
+    "prettier": "3.5.3",
+    "surge": "^0.24.6"
   }
 }
