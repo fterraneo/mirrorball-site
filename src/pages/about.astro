@@ -1,17 +1,27 @@
 ---
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component frontmatter". It never runs in the browser.
-console.log("This runs in your terminal, not the browser!");
+console.log("This runs in your terminal, not the browser!")
+const pageTitle = "About Me"
+
+const identity = {
+    firstName: "Sarah",
+    country: "Canada",
+    occupation: "Technical Writer",
+    hobbies: ["photography", "birdwatching", "baseball"],
+}
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"]
 ---
 <!-- Below is your "component template." It's just HTML, but with
     some magic sprinkled in to help you build great templates. -->
 <html>
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="generator" content={Astro.generator}>
-  <title>Mirrorball | A Dirty Power Trio | Band from Milano, Italy</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator}>
+    <title>{pageTitle}</title>
 </head>
 <body>
 
@@ -19,15 +29,32 @@ console.log("This runs in your terminal, not the browser!");
 <a href="/about/">About</a>
 <a href="/blog/">Blog</a>
 
-<h1>About Me</h1>
+<h1>{pageTitle}</h1>
 <h2>... and my new Astro site!</h2>
 <p>
-  I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I
-  built myself!
+    I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I
+    built myself!
 </p>
 <p>
-  This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!
+    This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!
 </p>
+
+<p>Here are a few facts about me:</p>
+<ul>
+    <li>My name is {identity.firstName}.</li>
+    <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+    {
+        identity.hobbies.length >= 2 &&
+        <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+    }
+</ul>
+<p>My skills are:</p>
+<ul>
+    {
+        skills.map((skill) =>
+            <li>{skill}</li>)
+    }
+</ul>
 
 </body>
 </html>
