@@ -1,10 +1,11 @@
 ---
 import Navigation from "../components/Navigation.astro"
+import Footer from "../components/Footer.astro"
 import "../styles/global.css"
 
 const pageTitle = "Mirrorball | A Dirty Power Trio | Band from Milano, Italy"
 ---
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -18,10 +19,7 @@ const pageTitle = "Mirrorball | A Dirty Power Trio | Band from Milano, Italy"
 
 <h1>{pageTitle}</h1>
 
+<Footer />
+
 </body>
 </html>
-<style>
-    h1 {
-        color: orange;
-    }
-</style>
