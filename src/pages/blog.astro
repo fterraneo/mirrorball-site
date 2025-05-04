@@ -1,13 +1,9 @@
 ---
-// Welcome to Astro! Everything between these triple-dash code fences
-// is your "component frontmatter". It never runs in the browser.
+import Navigation from "../components/Navigation.astro"
 import '../styles/global.css';
 
-console.log("This runs in your terminal, not the browser!")
 const pageTitle = "My Astro Learning Blog"
 ---
-<!-- Below is your "component template." It's just HTML, but with
-    some magic sprinkled in to help you build great templates. -->
 <html>
 <head>
     <meta charset="utf-8" />
@@ -18,9 +14,7 @@ const pageTitle = "My Astro Learning Blog"
 </head>
 <body>
 
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/blog/">Blog</a>
+<Navigation />
 
 <h1>{pageTitle}</h1>
 <p>This is where I will post about my journey learning Astro.</p>
