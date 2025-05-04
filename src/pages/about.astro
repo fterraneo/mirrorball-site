@@ -16,6 +16,10 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"]
 const happy = true
 const finished = false
 const goal = 3
+
+const skillColor = "navy"
+const fontWeight = "bold"
+const textCase = "uppercase"
 ---
 <!-- Below is your "component template." It's just HTML, but with
     some magic sprinkled in to help you build great templates. -->
@@ -56,7 +60,7 @@ const goal = 3
 <ul>
     {
         skills.map((skill) =>
-            <li>{skill}</li>)
+            <li class="skill">{skill}</li>)
     }
 </ul>
 
@@ -68,3 +72,15 @@ const goal = 3
 
 </body>
 </html>
+<style define:vars={{ skillColor, fontWeight, textCase }}>
+    h1 {
+        color: purple;
+        font-size: 4rem;
+    }
+
+    .skill {
+        color: var(--skillColor);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textCase);
+    }
+</style>
