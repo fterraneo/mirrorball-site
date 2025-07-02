@@ -1,0 +1,12 @@
+- surge
+  - [DONE] add dns entry on ovh to make mirrorball.ovh to point to the surge domain
+  - [DONE] is https certificate working?
+    - yes, for surge based domains (mirrorball.surge.sh)
+    - no, for custom domains (mirrorball.ovh)
+  - [TODO] understand if deploying to mirrorball.surge.sh will affect also mirrorball.ovh and viceversa
+- ovh
+  - [DONE] valid https certificate for mirrorball.it and www.mirrorball.it
+  - [TODO] manual deploy
+  - [TODO] automatic deploy
+- subdomain to support images for blog posts
+  - [TODO] create a subdomain for images, like images.mirrorball.ovh pointing to a dedicated folder
