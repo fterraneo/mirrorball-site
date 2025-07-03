@@ -7,7 +7,7 @@
     - they are separated, surge is creating a dedicated space for every domain. But this is an anti-pattern: multiple domains should be managed through redirects. Tearing down mirrorball.ovh on surge.
 - ovh
   - [DONE] valid https certificate for mirrorball.it and www.mirrorball.it
-  - [TODO] manual deploy
+  - [DONE] manual deploy
   - [TODO] automatic deploy
 - subdomain to support images for blog posts
-  - [TODO] create a subdomain for images, like images.mirrorball.it pointing to a dedicated folder
+  - [DONE] create a subdomain for images, like images.mirrorball.it pointing to a dedicated folder
