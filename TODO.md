@@ -3,10 +3,11 @@
   - [DONE] is https certificate working?
     - yes, for surge based domains (mirrorball.surge.sh)
     - no, for custom domains (mirrorball.ovh)
-  - [TODO] understand if deploying to mirrorball.surge.sh will affect also mirrorball.ovh and viceversa
+  - [DONE] understand if deploying to mirrorball.surge.sh will affect also mirrorball.ovh and viceversa
+    - they are separated, surge is creating a dedicated space for every domain. But this is an anti-pattern: multiple domains should be managed through redirects. Tearing down mirrorball.ovh on surge.
 - ovh
   - [DONE] valid https certificate for mirrorball.it and www.mirrorball.it
   - [TODO] manual deploy
   - [TODO] automatic deploy
 - subdomain to support images for blog posts
-  - [TODO] create a subdomain for images, like images.mirrorball.ovh pointing to a dedicated folder
+  - [TODO] create a subdomain for images, like images.mirrorball.it pointing to a dedicated folder
