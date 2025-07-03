@@ -8,6 +8,6 @@
 - ovh
   - [DONE] valid https certificate for mirrorball.it and www.mirrorball.it
   - [DONE] manual deploy
-  - [TODO] automatic deploy
+  - [DONE] automatic deploy
 - subdomain to support images for blog posts
   - [DONE] create a subdomain for images, like images.mirrorball.it pointing to a dedicated folder
