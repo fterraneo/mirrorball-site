@@ -30,8 +30,6 @@ FTP_PORT=ftp-port
 REMOTE_DIR=target folder on the server
 ```
 Then run:
-```
-
 ```shell
 npm run deploy
 ```
