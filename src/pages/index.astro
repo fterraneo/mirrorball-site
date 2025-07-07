@@ -1,11 +1,49 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
-import Greeting from "../components/Greeting"
 import "../styles/global.css"
 
-const pageTitle = "Mirrorball | A Dirty Power Trio | Band from Milano, Italy"
+const pageTitle = "Mirrorball | A Dirty Power Trio | Grunge / Rock band from Milano, Italy"
 ---
 <BaseLayout pageTitle={pageTitle}>
-    <h2>My awesome blog subtitle</h2>
-    <Greeting client:load messages={["Ciao", "Daje", "Bella", "Oh"]} />
+    <h1>Mirrorball</h1>
+    <h2>A Dirty Power Trio</h2>
+    <h3>Grunge / Rock band from Milano, Italy</h3>
+    <ul class="links">
+        <li><a target="_blank" href="https://www.youtube.com/watch?v=XD8bIgp7zoM&t=2316s">Intervista + live @ Rocker TV - FATTI SCOPRIRE!</a></li>
+        <li><a target="_blank" href="https://specchiopalla.bandcamp.com/album/two-minutes-more">Our new album: TWO MINUTES MORE</a></li>
+        <li><a target="_blank" href="https://specchiopalla.bandcamp.com/">Follow us on Bandcamp.com</a></li>
+        <li><a target="_blank" href="https://www.rockit.it/recensione/61921/mirrorball-two-minutes-more">Recensione di "Two Minutes More" su RockIT</a></li>
+        <li><a target="_blank" href="https://docs.google.com/document/d/1nztD3kf0xEK82e7aqlO9RMlq3yYSB_Sazaz56yrjlzw/edit?usp=share_link">TWO MINUTES MORE - Comunicato stampa</a></li>
+        <li><a target="_blank" href="https://drive.google.com/drive/folders/10hpDxg6-IBsC09U7q0qQbRtUUVbhbMke?usp=share_link">PRESS KIT</a></li>
+        <li><a target="_blank" href="https://www.youtube.com/user/specchiopalla?sub_confirmation=1">Watch us on YouTube</a></li>
+        <li><a target="_blank" href="https://www.rockit.it/mirrorball">Mirrorball su RockIT.it</a></li>
+        <li><a target="_blank" href="https://tidal.com/browse/artist/36117151">TIDAL profile</a></li>
+    </ul>
 </BaseLayout>
+<style>
+    ul.links {
+        list-style-type: none;
+        padding: 0;
+        margin: 3rem 0;
+    }
+
+    ul.links li {
+        margin: 1rem 0;
+    }
+
+    .links a {
+        display: block;
+        text-decoration: none;
+        color: #000;
+        border-radius: 32px;
+        border: 2px solid #000;
+        padding: 20px;
+        text-align: center;
+        transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99), background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+    }
+
+    .links a:hover {
+        background-color: #000;
+        color: #ffb400;
+    }
+</style>
