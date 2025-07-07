@@ -15,8 +15,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@astrojs/preact": "^4.1.0",
     "@astrojs/rss": "^4.0.12",
-    "astro": "^5.7.10"
+    "astro": "^5.7.10",
+    "preact": "^10.26.9"
   },
   "devDependencies": {
     "dotenv": "^17.0.1",

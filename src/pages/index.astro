@@ -1,9 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
+import Greeting from "../components/Greeting"
 import "../styles/global.css"
 
 const pageTitle = "Mirrorball | A Dirty Power Trio | Band from Milano, Italy"
 ---
 <BaseLayout pageTitle={pageTitle}>
     <h2>My awesome blog subtitle</h2>
+    <Greeting client:load messages={["Ciao", "Daje", "Bella", "Oh"]} />
 </BaseLayout>
