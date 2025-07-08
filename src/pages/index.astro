@@ -5,30 +5,50 @@ import "../styles/global.css"
 const pageTitle = "Mirrorball | A Dirty Power Trio | Grunge / Rock band from Milano, Italy"
 ---
 <BaseLayout pageTitle={pageTitle}>
-    <h1>Mirrorball</h1>
-    <h2>A Dirty Power Trio</h2>
-    <h3>Grunge / Rock band from Milano, Italy</h3>
-    <ul class="links">
-        <li><a target="_blank" href="https://www.youtube.com/watch?v=XD8bIgp7zoM&t=2316s">Intervista + live @ Rocker TV - FATTI SCOPRIRE!</a></li>
-        <li><a target="_blank" href="https://specchiopalla.bandcamp.com/album/two-minutes-more">Our new album: TWO MINUTES MORE</a></li>
-        <li><a target="_blank" href="https://specchiopalla.bandcamp.com/">Follow us on Bandcamp.com</a></li>
-        <li><a target="_blank" href="https://www.rockit.it/recensione/61921/mirrorball-two-minutes-more">Recensione di "Two Minutes More" su RockIT</a></li>
-        <li><a target="_blank" href="https://docs.google.com/document/d/1nztD3kf0xEK82e7aqlO9RMlq3yYSB_Sazaz56yrjlzw/edit?usp=share_link">TWO MINUTES MORE - Comunicato stampa</a></li>
-        <li><a target="_blank" href="https://drive.google.com/drive/folders/10hpDxg6-IBsC09U7q0qQbRtUUVbhbMke?usp=share_link">PRESS KIT</a></li>
-        <li><a target="_blank" href="https://www.youtube.com/user/specchiopalla?sub_confirmation=1">Watch us on YouTube</a></li>
-        <li><a target="_blank" href="https://www.rockit.it/mirrorball">Mirrorball su RockIT.it</a></li>
-        <li><a target="_blank" href="https://tidal.com/browse/artist/36117151">TIDAL profile</a></li>
-    </ul>
+    <div class="container">
+
+        <section class="heading">
+            <h1>Mirrorball</h1>
+            <h2>A Dirty Power Trio</h2>
+            <h3>Grunge / Rock band from Milano, Italy</h3>
+        </section>
+
+        <ul class="links">
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=XD8bIgp7zoM&t=2316s">Intervista + live @ Rocker TV - FATTI SCOPRIRE!</a></li>
+            <li><a target="_blank" href="https://specchiopalla.bandcamp.com/album/two-minutes-more">Our new album: TWO MINUTES MORE</a></li>
+            <li><a target="_blank" href="https://specchiopalla.bandcamp.com/">Follow us on Bandcamp.com</a></li>
+            <li><a target="_blank" href="https://www.rockit.it/recensione/61921/mirrorball-two-minutes-more">Recensione di "Two Minutes More" su RockIT</a></li>
+            <li><a target="_blank" href="https://docs.google.com/document/d/1nztD3kf0xEK82e7aqlO9RMlq3yYSB_Sazaz56yrjlzw/edit?usp=share_link">TWO MINUTES MORE - Comunicato stampa</a></li>
+            <li><a target="_blank" href="https://drive.google.com/drive/folders/10hpDxg6-IBsC09U7q0qQbRtUUVbhbMke?usp=share_link">PRESS KIT</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/user/specchiopalla?sub_confirmation=1">Watch us on YouTube</a></li>
+            <li><a target="_blank" href="https://www.rockit.it/mirrorball">Mirrorball su RockIT.it</a></li>
+            <li><a target="_blank" href="https://tidal.com/browse/artist/36117151">TIDAL profile</a></li>
+        </ul>
+
+    </div>
 </BaseLayout>
+
 <style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+    }
+
     ul.links {
+        width: 100%;
         list-style-type: none;
         padding: 0;
-        margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
 
     ul.links li {
-        margin: 1rem 0;
+        width: 100%;
     }
 
     .links a {
@@ -46,4 +66,5 @@ const pageTitle = "Mirrorball | A Dirty Power Trio | Grunge / Rock band from Mil
         background-color: #000;
         color: #ffb400;
     }
+
 </style>
