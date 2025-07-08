@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css"
 
-const { pageTitle } = Astro.props
+const { pageTitle, pageDescription } = Astro.props
 ---
 <html lang="en">
 <head>
@@ -9,6 +9,7 @@ const { pageTitle } = Astro.props
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator}>
+    <meta name="description" content={pageDescription} />
     <title>{pageTitle}</title>
 </head>
 <body>
