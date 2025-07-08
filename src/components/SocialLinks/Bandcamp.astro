@@ -1,0 +1,7 @@
+---
+import SocialLink from "./SocialLink.astro"
+const { handle } = Astro.props
+---
+<SocialLink target={`https://${handle}.bandcamp.com/`}>
+    <svg fill="currentColor" width="32" height="32" viewBox="0 0 24 24" class="text-profileTitleText"><title>Bandcamp</title><path d="M2 17.9236H15.6943L22 6.07642H8.30573"></path></svg>
+</SocialLink>
