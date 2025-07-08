@@ -1,0 +1,7 @@
+---
+import SocialLink from "./SocialLink.astro"
+const { handle } = Astro.props
+---
+<SocialLink target={`https://www.twitch.tv/${handle}`}>
+    <svg fill="currentColor" width="32" height="32" viewBox="0 0 24 24" class="text-profileTitleText"><title>Twitch</title><path fill-rule="evenodd" clip-rule="evenodd" d="M7.00136 3L3.42993 6.57143V19.4286H7.71565V23L11.2871 19.4286H14.1442L20.5728 13V3H7.00136ZM19.1442 12.2857L16.2871 15.1429H13.4299L10.9299 17.6429V15.1429H7.71565V4.42857H19.1442V12.2857ZM17.0016 6.92863H15.573V11.2143H17.0016V6.92863ZM11.6443 6.92863H13.0729V11.2143H11.6443V6.92863Z"></path></svg>
+</SocialLink>
